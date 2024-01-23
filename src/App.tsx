@@ -4,12 +4,15 @@ import './App.css';
 
 import About from './Pages/About'
 import CarModels from './Pages/CarModels';
+import Testimonials from './Components/Testmonials';
 
 function App() {
   return (
     <>
     {/* <About /> */}
-    <CarModels />
+    {/* <CarModels /> */}
+    <Testimonials />
+    
     </>
   );
 }
