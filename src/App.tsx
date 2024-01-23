@@ -1,17 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-import About from './Pages/About'
-import CarModels from './Pages/CarModels';
-import Testimonials from './Components/Testmonials';
+import Contact from './Pages/Contact';
+import TestimonialsPage from './Pages/TestimonialsPage';
 
 function App() {
   return (
     <>
-    {/* <About /> */}
-    {/* <CarModels /> */}
-    <Testimonials />
+    <TestimonialsPage />
     
     </>
   );
