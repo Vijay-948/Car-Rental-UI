@@ -1,10 +1,10 @@
-import Contact from './Pages/Contact';
-import TestimonialsPage from './Pages/TestimonialsPage';
+import Footer from './Components/Footer';
+
 
 function App() {
   return (
     <>
-    <TestimonialsPage />
+    <Footer />
     
     </>
   );
