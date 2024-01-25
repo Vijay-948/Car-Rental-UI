@@ -1,10 +1,14 @@
-import Footer from './Components/Footer';
+
+import PlanTrip from './Components/PlanTrip';
+
 
 
 function App() {
   return (
     <>
-    <Footer />
+     
+     <PlanTrip />
+    
     
     </>
   );
