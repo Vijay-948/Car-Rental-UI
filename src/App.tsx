@@ -1,5 +1,6 @@
 
-import PlanTrip from './Components/PlanTrip';
+import Faq from './Components/Faq';
+
 
 
 
@@ -7,7 +8,7 @@ function App() {
   return (
     <>
      
-     <PlanTrip />
+     <Faq />
     
     
     </>
