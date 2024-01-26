@@ -1,5 +1,7 @@
 
-import Faq from './Components/Faq';
+import ChooseUs from './Components/ChooseUs';
+
+
 
 
 
@@ -8,7 +10,7 @@ function App() {
   return (
     <>
      
-     <Faq />
+     <ChooseUs />
     
     
     </>

@@ -75,16 +75,20 @@ function Faq(){
                             </div>
                         </div>
                         <div className="faq-box">
-                            <p>LEGAL</p>
-                            <i className="fa-solid fa-angle-down"></i>
-                        </div>
-                        <div>
-                            <strong>What is the insurance Cover?</strong>
-                            <p>
-                                Damage costs up to INR 6,000/- is to be paid by Hirer. 
-                                In case the damage is more than INR 6,000, an insurance claim will be filed. 
-                                The amount of depreciation and parts which are not covered under insurance will be borne by the Hirer.
-                            </p>
+                            <div>
+                                 <p>LEGAL</p>
+                                <i className="fa-solid fa-angle-down"></i>
+
+                            </div>
+                        
+                            <div>
+                                <strong>What is the insurance Cover?</strong>
+                                <p>
+                                    Damage costs up to INR 6,000/- is to be paid by Hirer. 
+                                    In case the damage is more than INR 6,000, an insurance claim will be filed. 
+                                    The amount of depreciation and parts which are not covered under insurance will be borne by the Hirer.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
