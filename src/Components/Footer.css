@@ -1,0 +1,11 @@
+
+footer{
+    background-color: #ffffff;
+    padding: 10rem 0;
+}
+
+.footer-content{
+    display: grid;
+    color: blue;
+    grid-template-columns: 27fr 21fr 21fr 21fr;
+}
