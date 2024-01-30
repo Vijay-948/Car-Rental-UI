@@ -23,7 +23,7 @@ function Footer() {
                         <li>
                             <a href="mailto:rentalcar@gmail.com">
                                 <i className="fa-solid fa-envelope"></i>
-                                &nbsp; calebjephuneh@gmail.com
+                                &nbsp; carrental@gmail.com
                             </a>
                         </li>
 

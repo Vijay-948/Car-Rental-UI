@@ -1,11 +1,38 @@
+/* //@use "../global" as *; */
 
 footer{
     background-color: #ffffff;
     padding: 10rem 0;
+    background-color: black;
 }
 
 .footer-content{
     display: grid;
     color: blue;
     grid-template-columns: 27fr 21fr 21fr 21fr;
+    gap: 8rem;
+    justify-content: center;
+    text-align: left;
+    color: white;
+}
+
+.footer-content__1{
+    list-style: none;
+
+    .footer-content__1 li{
+        a{
+            text-decoration: dotted;
+            color: #ffffff;
+            transition: all 0.2s;
+            .footer-content__1 li a:hover{
+                color: #ffffff;
+            }
+        }
+
+        .footer-content__1 li:nth-child(1) span{
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
 }
