@@ -1,10 +1,13 @@
-import Footer from "./Components/Footer";
+import BookCar from "./Components/BookCar";
+
 
 
 function App() {
   return (
     <>
-    <Footer />
+
+    {/* <BookCar /> */}
+   
 
     </>
   );
