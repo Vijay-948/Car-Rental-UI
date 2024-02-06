@@ -11,17 +11,19 @@ import Img10 from '../Assests/CarModels/innova.png';
 
 
 
-// interface Car{
-//     name: string;
-//     price: string;
-//     // img: string;
-//     model: string;
-//     year: string;
-//     transmission: string;
-//     fuel: string;
-// }
+interface Car{
+    name: string;
+    price: string;
+    img: string;
+    model: string;
+    year: string;
+    transmission: string;
+    fuel: string;
+}
 
-const CarData = ()  => [
+// type CarData = Record<string, Car[]>;
+
+export const CarData = ()  => [
     [
         {
             name: "Volvo",
