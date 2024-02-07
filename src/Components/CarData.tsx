@@ -13,18 +13,17 @@ import Img10 from '../Assests/CarModels/innova.png';
 
 interface Car{
     name: string;
-    price: string;
     img: string;
+    price: string;
     model: string;
     year: string;
     transmission: string;
     fuel: string;
 }
 
-// type CarData = Record<string, Car[]>;
 
-export const CarData = ()  => [
-    [
+export const CarData: Car[]  = [
+    
         {
             name: "Volvo",
             price: "5000",
@@ -34,9 +33,9 @@ export const CarData = ()  => [
             transmission: "manual",
             fuel: "Diesel",
             
-        }
-    ],
-    [
+        },
+    
+    
         {
             name: "Volkswagen",
             price: "1500",
@@ -46,9 +45,9 @@ export const CarData = ()  => [
             transmission: "manual",
             fuel: "Diesel",
             
-        }
-    ],
-    [
+        },
+    
+
         {
             name: "BMW",
             price: "4000",
@@ -58,9 +57,9 @@ export const CarData = ()  => [
             transmission: "manual",
             fuel: "Diesel",
             
-        }
-    ],
-    [
+        },
+    
+
         {
             name: "Jaguar",
             price: "4000",
@@ -70,9 +69,9 @@ export const CarData = ()  => [
             transmission: "manual",
             fuel: "Diesel",
             
-        }
-    ],
-    [
+        },
+    
+    
         {
             name: "Toyota Fortuner",
             price: "4000",
@@ -82,9 +81,9 @@ export const CarData = ()  => [
             transmission: "manual",
             fuel: "Diesel",
             
-        }
-    ],
-    [
+        },
+    
+    
         {
             name: "Mahindra Thar",
             price: "4000",
@@ -94,9 +93,9 @@ export const CarData = ()  => [
             transmission: "manual",
             fuel: "Diesel",
             
-        }
-    ],
-    [
+        },
+    
+    
         {
             name: "Hyundai",
             price: "4000",
@@ -106,9 +105,9 @@ export const CarData = ()  => [
             transmission: "manual",
             fuel: "Diesel",
             
-        }
-    ],
-    [
+        },
+    
+    
         {
             name: "Jeep",
             price: "4000",
@@ -118,9 +117,9 @@ export const CarData = ()  => [
             transmission: "manual",
             fuel: "Diesel",
             
-        }
-    ],
-    [
+        },
+    
+    
         {
             name: "Honda",
             price: "4000",
@@ -130,9 +129,9 @@ export const CarData = ()  => [
             transmission: "manual",
             fuel: "Diesel",
             
-        }
-    ],
-    [
+        },
+    
+    
         {
             name: "Toyota Innova",
             price: "4000",
@@ -143,7 +142,10 @@ export const CarData = ()  => [
             fuel: "Diesel",
             
         }
-    ]
+    
+
 ]
 
-export default CarData;
+// export const transformedCarData: Record<string, Car[]> = Object.fromEntries(
+//     CarData.map((Car, index) => [index.toString(), Car])
+//   );

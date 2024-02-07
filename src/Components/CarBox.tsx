@@ -1,80 +1,75 @@
 import { useState } from "react";
 
-
-interface Car{
+interface Car {
+    name: string;
     img: string;
-    price: number;
+    price: string;
     model: string;
-    year: number;
-    air: string;
+    year: string;
     transmission: string;
     fuel: string;
 }
 
-interface CarBoxProps{
-    data: Record<string, Car[]>;
-    carID: string;
+interface CarBoxProps {
+    data: Car[];
+    carID: number;
 }
-const CarBox = ({data, carID}: CarBoxProps) => {
 
+const CarBox = ({ data, carID }: CarBoxProps) => {
     const [carLoad, setCarLoad] = useState(true);
 
-    return(
+    return (
         <>
-        {data[carID].map((car: Car, id: number) => (
-            <div>
-                <div>
-                    {carLoad && <span></span>}
-                    <img
-                      style={{display: carLoad ? 'none' : 'block'}}
-                      src="{car.img}"
-                      alt="car_img"
-                      onLoad={()=> setCarLoad(false)}
-                    />
-                </div>
-
-                <div>
+            {data[carID] && (
+                <div key={carID}>
                     <div>
-                        <span>{car.price}</span>/ rent per day
-                    </div>
-                    <div>
-                        <div>
-                            <span>Model</span>
-                            <span>{car.model}</span>
-                        </div>
-
-                        <div>
-                            <span>Year</span>
-                            <span>{car.year}</span>
-                        </div>
-
-                        <div>
-                            <span>Air</span>
-                            <span>{car.air}</span>
-                        </div>
-
-                        <div>
-                            <span>Transmission</span>
-                            <span>{car.transmission}</span>
-                        </div>
-
-                        <div>
-                            <span>Fuel</span>
-                            <span>{car.fuel}</span>
-                        </div>
+                        {carLoad && <span></span>}
+                        <img
+                            style={{ display: carLoad ? 'none' : 'block' }}
+                            src={data[carID].img}
+                            alt="car_img"
+                            onLoad={() => setCarLoad(false)}
+                        />
                     </div>
 
-                    <a href="#booking-section">
-                        Reserve Now
-                    </a>
-                   
+                    <div>
+                        <div>
+                            <span>{data[carID].price}</span>/ rent per day
+                        </div>
+                        <div>
+                            <div>
+                                <span>Model</span>
+                                <span>{data[carID].model}</span>
+                            </div>
+
+                            <div>
+                                <span>Year</span>
+                                <span>{data[carID].year}</span>
+                            </div>
+
+                            {/* <div>
+                                {/* Assuming 'air' property is part of your Car type 
+                                <span>Air</span>
+                                <span>{data[carID].air}</span>
+                            </div> */}
+
+                            <div>
+                                <span>Transmission</span>
+                                <span>{data[carID].transmission}</span>
+                            </div>
+
+                            <div>
+                                <span>Fuel</span>
+                                <span>{data[carID].fuel}</span>
+                            </div>
+                        </div>
+
+                        <a href="#booking-section">Reserve Now</a>
+                    </div>
                 </div>
-            </div>
-        ))}
+            )}
         </>
-
     );
-
-}
+};
 
 export default CarBox;

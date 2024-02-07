@@ -1,7 +1,7 @@
 import { useState } from "react"
 import CarBox from "./CarBox"
 
-import {CarData} from './CarData'
+import { CarData } from './CarData'
 
 const PickCar = () => {
     const [active, setActive] =  useState("FirstCar");
@@ -122,7 +122,16 @@ const PickCar = () => {
                             </button>
                         </div>
 
-                        {active === "FirstCar" && <CarBox data={Car_Data} carID={0} />}
+                        {active === "FirstCar" && <CarBox data={CarData} carID={0} />}
+                        {active === "2ndCar" && <CarBox data={CarData} carID={1} />}
+                        {active === "FirstCar" && <CarBox data={CarData} carID={2} />}
+                        {active === "FirstCar" && <CarBox data={CarData} carID={3} />}
+                        {active === "FirstCar" && <CarBox data={CarData} carID={4} />}
+                        {active === "FirstCar" && <CarBox data={CarData} carID={5} />}
+                        {active === "FirstCar" && <CarBox data={CarData} carID={6} />}
+                        {active === "FirstCar" && <CarBox data={CarData} carID={7} />}
+                        {active === "FirstCar" && <CarBox data={CarData} carID={8} />}
+                        {active === "FirstCar" && <CarBox data={CarData} carID={9} />}
                     </div>
                 </div>
             </div>
