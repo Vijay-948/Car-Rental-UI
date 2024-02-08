@@ -122,16 +122,16 @@ const PickCar = () => {
                             </button>
                         </div>
 
-                        {active === "FirstCar" && <CarBox data={CarData} carID={0} />}
-                        {active === "2ndCar" && <CarBox data={CarData} carID={1} />}
-                        {active === "FirstCar" && <CarBox data={CarData} carID={2} />}
-                        {active === "FirstCar" && <CarBox data={CarData} carID={3} />}
-                        {active === "FirstCar" && <CarBox data={CarData} carID={4} />}
-                        {active === "FirstCar" && <CarBox data={CarData} carID={5} />}
-                        {active === "FirstCar" && <CarBox data={CarData} carID={6} />}
-                        {active === "FirstCar" && <CarBox data={CarData} carID={7} />}
-                        {active === "FirstCar" && <CarBox data={CarData} carID={8} />}
-                        {active === "FirstCar" && <CarBox data={CarData} carID={9} />}
+                        {active === "car_1" && <CarBox data={CarData} carID={0} />}
+                        {active === "car_2" && <CarBox data={CarData} carID={1} />}
+                        {active === "car_3" && <CarBox data={CarData} carID={2} />}
+                        {active === "car_4" && <CarBox data={CarData} carID={3} />}
+                        {active === "car_5" && <CarBox data={CarData} carID={4} />}
+                        {active === "car_6" && <CarBox data={CarData} carID={5} />}
+                        {active === "car_7" && <CarBox data={CarData} carID={6} />}
+                        {active === "car_8" && <CarBox data={CarData} carID={7} />}
+                        {active === "car_9" && <CarBox data={CarData} carID={8} />}
+                        {active === "car_10" && <CarBox data={CarData} carID={9} />}
                     </div>
                 </div>
             </div>
