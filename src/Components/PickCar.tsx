@@ -4,7 +4,7 @@ import CarBox from "./CarBox"
 import { CarData } from './CarData'
 
 const PickCar = () => {
-    const [active, setActive] =  useState("FirstCar");
+    const [active, setActive] =  useState("car_1");
     const [colorBtn, setColorBtn] = useState("btn1");
 
 
