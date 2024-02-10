@@ -33,7 +33,7 @@ const PickCar = () => {
                             <button 
                               className={'dfdaf'}
                               onClick={() =>{
-                                  setActive("");
+                                  setActive("car_1");
                                   btnID("btn1");
                               }}
                             >
@@ -42,7 +42,7 @@ const PickCar = () => {
                             <button 
                               className={'dfdaf'}
                               onClick={() =>{
-                                  setActive("");
+                                  setActive("car_2");
                                   btnID("btn1");
                               }}
                             >
@@ -51,7 +51,7 @@ const PickCar = () => {
                             <button 
                               className={'dfdaf'}
                               onClick={() =>{
-                                  setActive("");
+                                  setActive("car_3");
                                   btnID("btn1");
                               }}
                             >
@@ -60,7 +60,7 @@ const PickCar = () => {
                             <button 
                               className={'dfdaf'}
                               onClick={() =>{
-                                  setActive("");
+                                  setActive("car_4");
                                   btnID("btn1");
                               }}
                             >
@@ -69,7 +69,7 @@ const PickCar = () => {
                             <button 
                               className={'dfdaf'}
                               onClick={() =>{
-                                  setActive("");
+                                  setActive("car_5");
                                   btnID("btn1");
                               }}
                             >
@@ -78,7 +78,7 @@ const PickCar = () => {
                             <button 
                               className={'dfdaf'}
                               onClick={() =>{
-                                  setActive("");
+                                  setActive("car_6");
                                   btnID("btn1");
                               }}
                             >
@@ -87,7 +87,7 @@ const PickCar = () => {
                             <button 
                               className={'dfdaf'}
                               onClick={() =>{
-                                  setActive("");
+                                  setActive("car_7");
                                   btnID("btn1");
                               }}
                             >
@@ -96,7 +96,7 @@ const PickCar = () => {
                             <button 
                               className={'dfdaf'}
                               onClick={() =>{
-                                  setActive("");
+                                  setActive("car_8");
                                   btnID("btn1");
                               }}
                             >
@@ -105,7 +105,7 @@ const PickCar = () => {
                             <button 
                               className={'dfdaf'}
                               onClick={() =>{
-                                  setActive("");
+                                  setActive("car_9");
                                   btnID("btn1");
                               }}
                             >
@@ -114,7 +114,7 @@ const PickCar = () => {
                             <button 
                               className={'dfdaf'}
                               onClick={() =>{
-                                  setActive("");
+                                  setActive("car_10");
                                   btnID("btn1");
                               }}
                             >

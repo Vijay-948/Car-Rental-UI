@@ -25,13 +25,13 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link onClick={handleNav} to="/models">
-                            Models
+                        <Link onClick={handleNav} to='/about'>
+                            About
                         </Link>
                     </li>
                     <li>
-                        <Link onClick={handleNav} to='/about'>
-                            About
+                        <Link onClick={handleNav} to="/models">
+                            Models
                         </Link>
                     </li>
                     <li>
@@ -53,35 +53,36 @@ const Navbar = () => {
                         <img src={Logo} alt="Vehicle-log" />
                     </Link> 
                 </div>
-                <ul>
+                <ul className="nav__links">
                     <li>
-                        <Link to="/">
+                        <Link className="home-link" to="/">
                             Home
                         </Link>
                     </li>
                     <li>
-                        <Link to="/about">
+                        {" "}
+                        <Link className="about-link" to="/about">
                             About
                         </Link>
                     </li>
                     <li>
-                        <Link to="/mdoels">
-                            Vehicle Models
+                        <Link className="models-link" to="/models">
+                            Models
                         </Link>
                     </li>
                     <li>
-                        <Link to="/testimonials">
+                        <Link className="testi-link" to="/testimonials">
                             Testimonials
                         </Link>
                     </li>
                     <li>
-                        <Link to="/contact">
+                        <Link className="contact-link" to="/contact">
                             Contact
                         </Link>
                     </li>
                 </ul>
-                <div>
-                    <Link to="/">
+                <div className="navbar__buttons">
+                    <Link className="navbar__buttons__register" to="/">
                         Register
                     </Link>
                 </div>
