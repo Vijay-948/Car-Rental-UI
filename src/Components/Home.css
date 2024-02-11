@@ -1,0 +1,138 @@
+
+.hero-section{
+    width: 100%;
+    height: 97vh;
+    background-color: var(--bg-gray);
+    position: relative;
+
+
+}
+
+.bg-shape{
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    z-index: 1;
+}
+
+
+.hero-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content__text{
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    max-width: 50rem;
+    margin-top: 5rem;
+}
+
+
+.hero-content__text h4{
+    font-size: large;
+    font-family: Poppins,sans-serif;
+    color: black;
+    
+}
+
+.hero-content__text h1 {
+    font-size: large;
+    font-family: Poppins,sans-serif;
+    font-weight: 700;
+    color: black;
+    line-height: 1.2;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content__text h1 span{
+    color: lightblue;
+}
+
+.hero-content__text p{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    line-height: 1.6;
+    color: rgb(5, 5, 5);
+    margin-bottom: 4rem;
+
+}
+
+.hero-content__text__btns {
+    display: flex;
+    gap: 2rem;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hero-content__text__btns a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
+.hero-content__text__btns__book-ride {
+    background-color: #483D8B;
+    padding: 1.8rem 3rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 10px 15px 0;
+    transition: all 0.3s;
+    border: 2px solid;
+}
+
+.hero-content__text__btns__book-ride:hover{
+    box-shadow: 0 10px 15px 0 #483D8B;
+    background-color: #483D8B;
+}
+
+.hero-content__text__btns__learn-more {
+    background-color: #483D8B;
+    padding: 1.8rem 3rem;
+    border-radius: 0.3rem;
+    border: 2px solid;
+    transition: all 0.3s;
+}
+
+.hero-content__text__btns__learn-more:hover{
+    background-color: transparent;
+    color: #483D8B;
+}
+
+.hero-content__car-img {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    width: 75%;
+    margin-top: 5rem;   
+}
+
+.scroll-up{
+  position: fixed;
+  font-size: 2.5rem;
+  color: white;
+  background-color: #483D8B;
+  border: 3px solid white;
+  width: 2rem;
+  height: 2rem;
+  bottom: 5rem;
+  right: 5rem;
+  z-index: 20;
+  display: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.show-scroll{
+    display: flex;
+}
+

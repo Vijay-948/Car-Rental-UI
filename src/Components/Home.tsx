@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import car from '../Assests/Hero/HeroJaguar.png'
+import bg from '../Assests/Hero/hero-bg.png'
+import  './Home.css'
 
 
 const Home = () => {
@@ -42,8 +44,8 @@ const Home = () => {
         <>
         <section id="home" className="hero-section">
             <div className="container">
-                <img />
-                <div className="hero-content">
+                <img className="bg-shape" src={bg} alt="bg-img" />
+                <div  className="hero-content">
                     <div className="hero-content__text">
                         <h4>Plan your trip now</h4>
                         <h1>
@@ -53,10 +55,10 @@ const Home = () => {
                             Explore limitless possibilities with our dream-worthy car rentals, featuring unbeatable prices, unlimited miles, and flexible pick-up choices.
                         </p>
                         <div className="hero-content__text__btns">
-                            <Link to="/">
+                            <Link className="hero-content__text__btns__book-ride" to="/">
                                 Book Ride &nbsp; <i className="fa-solid fa-circle-check"></i>
                             </Link>
-                            <Link to="/">
+                            <Link className="hero-content__text__btns__learn-more" to="/">
                                 Learn More &nbsp; <i className="fa-solid fa-angle-right"></i>
                             </Link>
                         </div>
