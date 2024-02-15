@@ -1,6 +1,6 @@
+import './Faq.css';
 
-
-function Faq(){
+const Faq = () => {
     return(
         <>
         <section className="faq-section">

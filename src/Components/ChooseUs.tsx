@@ -1,7 +1,8 @@
 import Img1 from '../Assests/ChooseUs/AllCars.png';
-import Img2 from '../Assests/ChooseUs/CarLoc.jpg';
+import Img2 from '../Assests/ChooseUs/choosecar.png'
 import Img3 from '../Assests/ChooseUs/rupee.png';
-import Img4 from '../Assests/ChooseUs/Nocharges.png'
+import Img4 from '../Assests/ChooseUs/Nocharges.png';
+import './ChooseUs.css';
 
 const ChooseUs = () =>{
    return(
@@ -14,7 +15,7 @@ const ChooseUs = () =>{
                     <div className="text-container__left">
                         <h4>Why Choose Us</h4>
                         <h2>
-                            Unbeatable deals, top-quality products: unmatched value you won't find elsewhere.
+                            Unbeatable deals, top-quality products, unmatched value-exclusive savings await!
                         </h2>
                         <p>
                             Unlock unparalleled value with our unbeatable deals, ensuring premium services at budget-friendly prices.

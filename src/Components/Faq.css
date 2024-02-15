@@ -1,0 +1,15 @@
+
+.faq-section {
+    padding: 10rem 0;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0 70%;
+
+}
+
+.faq-content {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+

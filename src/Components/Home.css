@@ -5,7 +5,6 @@
     background-color: var(--bg-gray);
     position: relative;
 
-
 }
 
 .bg-shape{
@@ -52,7 +51,7 @@
 }
 
 .hero-content__text h1 span{
-    color: lightblue;
+    color: #483D8B;
 }
 
 .hero-content__text p{

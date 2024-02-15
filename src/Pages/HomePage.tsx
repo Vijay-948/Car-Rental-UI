@@ -13,16 +13,16 @@ const HomePage = () => {
     
     return(
         <>
-           <Home />
+           {/* <Home />
            <BookCar />
            <PlanTrip />
            <PickCar />
-           <Banner />
+           <Banner /> 
            <ChooseUs />
-           <Testimonials />
+            <Testimonials /> */}
            <Faq />
-           <Download />
-           <Footer />
+           {/* <Download />
+           <Footer /> */}
            
 
         </>
@@ -30,4 +30,4 @@ const HomePage = () => {
 
 }
 
-export default HomePage
+export default HomePage;

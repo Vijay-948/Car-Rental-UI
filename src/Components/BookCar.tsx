@@ -102,6 +102,7 @@ const BookCar = () => {
 
     const handleCar = (event: React.ChangeEvent<HTMLInputElement>) => {
         setCarType(event.target.value);
+        setCarImg(event.target.value);
     }
 
     const handlePick = (event: React.ChangeEvent<HTMLInputElement>) =>{
@@ -146,6 +147,11 @@ const BookCar = () => {
     }else{
         imgUrl = "";
     }
+
+    // const hideMessage = () => {
+    //     const doneMsg = document.querySelector(".booking-done");
+    //     doneMsg.style.display = "none"
+    // }
 
     return (
         <>
