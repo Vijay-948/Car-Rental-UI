@@ -1,6 +1,6 @@
 
 .faq-section {
-    padding: 10rem 0;
+    padding: 5rem 0;
     background-size: auto;
     background-repeat: no-repeat;
     background-position: 0 70%;
@@ -14,7 +14,7 @@
 }
 
 .faq-content__title {
-    background-color: red;
+    background-color: white;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -27,6 +27,7 @@
 .faq-content__title h5 {
     font-size: 2rem;
     font-family: Poppins,sans-serif;
+    margin: 0;
 
 }
 
@@ -39,31 +40,84 @@
 .faq-content__title p {
     font-size: 1rem;
     font-family: Poppins,sans-serif;
-    color: rgb(144, 141, 141);
+    color: rgb(66, 66, 66);
 }
 
 .all-questions {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 7rem;
+    margin-top: 3rem;
 }
 
 .faq-box {
     display: flex;
     flex-direction: column;
     color: rgb(7, 7, 7);
-    background-color: blueviolet;
+    background-color: white;
     box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
-    width: 80rem;
+    width: 60rem;
     cursor: pointer;
 }
 
-/* .faq-box__question {
+@media (max-width: 850px){
+    .faq-box{
+        width: 100%;
+    }
+
+}
+
+.faq-box__question {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 3px 6px 0 red;
+    box-shadow: 0 3px 6px 0 #5a5197;
     padding: 1.8rem 4.5rem;
+    transition: 0.15s ease;
+}
+
+.faq-box__question p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: Poppins,sans-serif;
+}
+
+/* .faq-box__question i{
+    font-size: 2rem;
 } */
+
+.faq-box__answer {
+    font-size: 1rem;
+    font-family: Poppins,sans-serif;
+    color: rgb(118, 116, 116);
+    line-height: 1.5;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+    padding: 0 4.5rem;
+}
+
+.active-answer {
+    max-height: 50rem;
+    padding: 2.8rem 4.5rem;
+    transition: 0.4s ease;
+}
+
+@media (max-width: 550px) {
+    .active-answer{
+        max-height: 70rem;
+    }
+}
+
+@media (max-width: 420px){
+    .active-answer {
+        max-height: 70rem
+    }
+}
+
+.active-question {
+    background-color: #5a5197;
+    color: white;
+    box-shadow: 0 10px 15px 0 #483D8B;
+}
 
