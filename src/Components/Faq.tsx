@@ -1,14 +1,27 @@
+import { useState } from 'react';
 import './Faq.css';
 
 const Faq = () => {
+
+    const [openQues, setOpenQeus] = useState("q1");
+
+    const handleOpenQues = (id: string)  => {
+        setOpenQeus(openQues === id ? "" : id);
+
+    }
+
+
+    const getOpenQuestion = (id) => {
+
+    }
     return(
         <>
         <section className="faq-section">
             <div className="container">
                 <div className="faq-content">
                     <div className="faq-content__title">
-                        <h1>FAQ</h1>
-                        <h3>Frequently Asked Question</h3>
+                        <h5>FAQ</h5>
+                        <h2>Frequently Asked Question</h2>
                         <p>
                              Visit our FAQ section for quick answers and insights into the car rental process, making your booking experience hassle-free.
                         </p>
@@ -16,7 +29,7 @@ const Faq = () => {
 
                     <div className="all-questions">
                         <div className="faq-box">
-                            <div>
+                            <div id='q1' onClick={() => }>
                                 <p>1. OPERATIONS</p>  
                                 <i className="fa-solid fa-angle-down"></i>  
                             </div>
@@ -76,7 +89,7 @@ const Faq = () => {
                         </div>
                         <div className="faq-box">
                             <div>
-                                 <p>LEGAL</p>
+                                 <p>3. LEGAL</p>
                                 <i className="fa-solid fa-angle-down"></i>
 
                             </div>

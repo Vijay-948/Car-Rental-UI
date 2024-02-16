@@ -13,3 +13,57 @@
     color: black;
 }
 
+.faq-content__title {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 80rem;
+    line-height: 1;
+    
+}
+
+.faq-content__title h5 {
+    font-size: 2rem;
+    font-family: Poppins,sans-serif;
+
+}
+
+.faq-content__title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.7rem;
+    font-family: Poppins,sans-serif;
+}
+
+.faq-content__title p {
+    font-size: 1rem;
+    font-family: Poppins,sans-serif;
+    color: rgb(144, 141, 141);
+}
+
+.all-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.faq-box {
+    display: flex;
+    flex-direction: column;
+    color: rgb(7, 7, 7);
+    background-color: blueviolet;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+    width: 80rem;
+    cursor: pointer;
+}
+
+/* .faq-box__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 6px 0 red;
+    padding: 1.8rem 4.5rem;
+} */
+
