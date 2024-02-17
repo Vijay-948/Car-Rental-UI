@@ -19,10 +19,10 @@ const HomePage = () => {
            <PickCar />
            <Banner /> 
            <ChooseUs />
-            <Testimonials /> */}
+            <Testimonials />
            <Faq />
-           {/* <Download />
-           <Footer /> */}
+           <Download /> */}
+           <Footer />
            
 
         </>

@@ -1,4 +1,6 @@
-import  './Footer.css';
+
+
+import '../Styles/Footer.css'
 
 function Footer() {
     return (
@@ -23,13 +25,13 @@ function Footer() {
                         <li>
                             <a href="mailto:rentalcar@gmail.com">
                                 <i className="fa-solid fa-envelope"></i>
-                                &nbsp; carrental@gmail.com
+                                &nbsp; kvijayreddy948@gmail.com
                             </a>
                         </li>
 
                         <li>
                            <a target="_blank" rel="noreferrer" href="https://jephunneh.com/">
-                            Design by Vijay Reddy
+                            &copy; Design by Vijay Reddy
                            </a>
                         </li>
                     </ul>
@@ -62,10 +64,10 @@ function Footer() {
                     <ul className="footer-content__2">
                         <li>Subscription</li>
                         <li>
-                            <p>Subscribe your Email address for latest neew & updates.</p>
+                            <p>Subscribe your Email address for latest news & updates.</p>
                         </li>
                         <li>
-                            <input type="email" placeholder="Enter Email"></input>
+                            <input type="email" placeholder="Enter Email Address"></input>
                         </li>
                         <li>
                             <button className="submit-email">Submit</button>
