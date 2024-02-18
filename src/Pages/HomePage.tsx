@@ -13,16 +13,16 @@ const HomePage = () => {
     
     return(
         <>
-           {/* <Home />
+           {/* {/* <Home />
            <BookCar />
-           <PlanTrip />
+           <PlanTrip /> */}
            <PickCar />
-           <Banner /> 
+           {/* <Banner /> 
            <ChooseUs />
-            <Testimonials />
-           <Faq />
-           <Download /> */}
-           <Footer />
+           <Testimonials />
+           <Faq /> 
+           <Download />
+           <Footer /> */}
            
 
         </>

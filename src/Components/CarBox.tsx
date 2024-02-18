@@ -26,11 +26,11 @@ const CarBox = ({ data, carID }: CarBoxProps) => {
         <>
             {/* Check if data at the specified carID exists */}
             {data[carID] && (
-                <div key={carID}>
+                <div key={carID} className="box-cars">
                     {/* Image section */}
-                    <div>
+                    <div className="pick-car">
                         {/* Display a loading span while the image is loading */}
-                        {carLoad && <span></span>}
+                        {carLoad && <span className="loader"></span>}
                         {/* Display the car image and trigger onLoad when it's loaded */}
                         <img
                             style={{ display: carLoad ? 'none' : 'block' }}
@@ -41,18 +41,18 @@ const CarBox = ({ data, carID }: CarBoxProps) => {
                     </div>
 
                     {/* Car information section */}
-                    <div>
+                    <div className="pick-description">
                         {/* Display the price */}
-                        <div>
+                        <div className="pick-description__price">
                             <span>{data[carID].price}</span>/ rent per day
                         </div>
                         {/* Display model and year */}
-                        <div>
-                            <div>
+                        <div className="pick-description__table">
+                            <div className="pick-description__table__col">
                                 <span>Model</span>
                                 <span>{data[carID].model}</span>
                             </div>
-                            <div>
+                            <div className="pick-description__table__col">
                                 <span>Year</span>
                                 <span>{data[carID].year}</span>
                             </div>
@@ -60,18 +60,18 @@ const CarBox = ({ data, carID }: CarBoxProps) => {
 
                         {/* Transmission and Fuel section */}
                         
-                            <div>
+                            <div className="pick-description__table__col">
                                 <span>Transmission</span>
                                 <span>{data[carID].transmission}</span>
                             </div>
-                            <div>
+                            <div className="pick-description__table__col">
                                 <span>Fuel</span>
                                 <span>{data[carID].fuel}</span>
                             </div>
                         </div>
 
                         {/* Reservation link */}
-                        <a href="#booking-section">Reserve Now</a>
+                        <a className="btn" href="#booking-section">Reserve Now</a>
                     </div>
                 </div>
             )}

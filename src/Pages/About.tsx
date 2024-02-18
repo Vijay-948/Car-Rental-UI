@@ -4,6 +4,7 @@ import AboutMain from '../Assests/About/about-main.jpg';
 import icon1 from '../Assests/About/vehicles.png';
 import icon2 from '../Assests/About/car-rental.png';
 import icon3 from '../Assests/About/car-repair.png';
+import Footer from '../Components/Footer';
 
 function About() {
     return (
@@ -61,6 +62,7 @@ function About() {
                 </div>
             </div>
         </div>
+        <Footer />
         </>
     )
 }

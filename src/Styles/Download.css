@@ -1,0 +1,86 @@
+
+.download-section {
+    background-image: url('/src/Assests/Download/downloadapp.webp');
+    background-color: #f8f8f8; 
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 10rem 0;
+    width: 100%;
+    
+}
+
+.container {
+    margin: 0 auto;
+    /* padding: 120rem; */
+    padding: 10 22.5rem;
+    
+}
+
+@media (max-width: 700px){
+    .download-section{
+        background-image: none;
+    }
+}
+
+.download-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 55rem;
+    text-align: left;
+}
+
+@media (max-width: 700px){
+    .download-text {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.download-text h2 {
+    font-size:1.5rem;
+    font-family: poppins,sans-serif;
+    color: black;
+}
+
+.download-text p {
+    font-size: 1.1rem;
+    color: rgb(125, 122, 122);
+    font-family: poppins,sans-serif;
+    line-height: 1.5;
+}
+
+.download-text__btns {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 700px) {
+    .download-text__btns {
+        justify-content: center;
+    }
+}
+
+@media (mx-width: 550px){
+    .download-text__btns{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.download-text__btns img {
+    width: 30%;
+    cursor: pointer;
+    padding: 2rem;
+    
+    
+}
+
+@media(max-width: 550px){
+    .download-text__btns img {
+        width: 8rem;
+    }
+}

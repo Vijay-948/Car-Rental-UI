@@ -1,6 +1,7 @@
 import Img1 from '../Assests/Download/appstore.svg';
 import Img2 from '../Assests/Download/googleapp.svg';
 
+import '../Styles/Download.css';
 const Download = () => {
     return(
         <>

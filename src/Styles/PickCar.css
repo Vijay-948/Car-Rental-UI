@@ -1,0 +1,78 @@
+
+.pick-section {
+    padding: 0rem 0;
+}
+
+.pick-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.pick-container__title {
+    margin: 0 auto;
+    text-align: center;
+    color: #000000;
+    max-width: 50rem;
+    margin-bottom: 0rem;
+
+}
+
+.pick-container__title h3 {
+    font-size: 2rem;
+    font-family: poppins,sans-serif;
+    font-weight: 700;
+}
+
+.pick-container__title h2 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0 1rem 0;
+    font-family: poppins,sans-serif;
+}
+
+.pick-container__title p{
+    font-size: 1rem;
+    font-family: poppins,sans-serif;
+    color: #808080;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.pick-container__car-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.pick-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.pick-box button {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: poppins,sans-serif;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 3.5rem;
+    background-color: gray;
+    transition: all 0.2s;
+    text-align: left;
+}
+
+.pick-box button:hover {
+    background-color: #483D8B;
+    color: white;
+}
+
+.pick-car {
+    width: 50rem;
+    position: relative;
+}
+
+.pick-car img{
+    width: 100%;
+    margin-top: 6rem;
+}
+
