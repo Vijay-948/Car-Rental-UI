@@ -15,7 +15,7 @@ const PickCar = () => {
     }
 
     const colorButton = (id: any) => {
-        return colorBtn === id ? { backgroundColor: 'red', color: 'white'}: {};
+        return colorBtn === id ? "colored-button" : "";
     }
 
 
