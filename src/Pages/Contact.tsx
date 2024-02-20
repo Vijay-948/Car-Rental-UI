@@ -1,4 +1,5 @@
-
+import Footer from '../Components/Footer';
+import '../Styles/Contact.css';
 
 function Contact(){
     return(
@@ -9,7 +10,8 @@ function Contact(){
                     <div className="contact-div__text">
                         <h2>Need additional Information?</h2>
                         <p>
-                        I'm a well-rounded professional who's skilled in research, development, and learning. With over 15 years of experience, I bring a wealth of expertise to the table.
+                            I'm a well-rounded professional who's skilled in research, development, and learning. With over 10 years of experience,
+                            I bring a wealth of expertise to the table.
                         </p>
                         <a href='tel:+1234567890'>
                             <i className="fa-solid fa-phone"></i>&nbsp; 123456789
@@ -23,12 +25,12 @@ function Contact(){
                         </a>
                     </div>
 
-                    <div className="contat-div__form">
+                    <div className="contact-div__form">
                         <form>
                             <label>
                                 Full Name <b>*</b>
                             </label>
-                            <input type="text" placeholder="John"></input>
+                            <input type="text" placeholder="Vijay"></input>
 
                             <label>
                                 Email <b>*</b>
@@ -54,12 +56,13 @@ function Contact(){
                     <div className="text-content">
                         <h2>Book a car by getting in touch with us</h2>
                         <span>
-                            <i className="fa-solid fa-phone"></i>
+                            {/* <i className="fa-solid fa-phone"></i> */}
                             <h3>+91 1234567890</h3>
                         </span>
                     </div>
                 </div>
             </div>
+            <Footer />
           </section>
         </>
     );

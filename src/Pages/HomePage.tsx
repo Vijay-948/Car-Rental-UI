@@ -8,6 +8,7 @@ import Home from "../Components/Home"
 import PickCar from "../Components/PickCar"
 import PlanTrip from "../Components/PlanTrip"
 import Testimonials from "../Components/Testmonials"
+import Contact from "./Contact";
 
 const HomePage = () => {
     
@@ -16,13 +17,15 @@ const HomePage = () => {
            {/* {/* <Home />
            <BookCar />
            <PlanTrip /> */}
-           <PickCar />
+           {/* <PickCar /> */}
            {/* <Banner /> 
            <ChooseUs />
            <Testimonials />
            <Faq /> 
            <Download />
            <Footer /> */}
+
+           <Contact />
            
 
         </>
