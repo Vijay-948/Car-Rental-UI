@@ -10,11 +10,10 @@ function Contact(){
                     <div className="contact-div__text">
                         <h2>Need additional Information?</h2>
                         <p>
-                            I'm a well-rounded professional who's skilled in research, development, and learning. With over 10 years of experience,
-                            I bring a wealth of expertise to the table.
+                        I am an experienced professional proficient in research, development, and learning, with over a decade of expertise.
                         </p>
                         <a href='tel:+1234567890'>
-                            <i className="fa-solid fa-phone"></i>&nbsp; 123456789
+                            <i className="fa-solid fa-phone"></i>&nbsp; +91 1234567890
 
                         </a>
                         <a href="mailto:rentalcar124@gmail.com">

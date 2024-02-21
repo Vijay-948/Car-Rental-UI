@@ -1,4 +1,4 @@
-
+import '../Styles/Testimonials.css';
 
 function Testimonials() {
     return (
@@ -7,7 +7,7 @@ function Testimonials() {
             <div className="container">
                 <div className="testmonials-content">
                     <div className="testmonials-content__title">
-                        <h1>Reviewed by People</h1>
+                        <h4>Reviewed by People</h4>
                         <h2>Client's Testmonials</h2>
                         <p> 
                         Discover the positive impact we've made on the our clients by

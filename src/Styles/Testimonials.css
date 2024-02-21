@@ -1,0 +1,48 @@
+
+.testmonials-section {
+    background-color: red;
+    padding: 10rem 0;
+    color: white;
+}
+
+.testmonials-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.testmonials-content__title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 70rem;
+    margin-bottom: 5rem;
+}
+
+.testmonials-content__title h4 {
+    font-size: 2rem;
+    font-family: poppins,sans-serif;
+    font-weight: 600;
+    margin-bottom: -1rem;
+}
+
+.testmonials-content__title h2 {
+    font-size: 3.6rem;
+    margin-bottom: 1.4rem;
+    font-family: poppins,sans-serif;
+}
+
+.testmonials-content__title p {
+    font-size: 1.6rem;
+    font-family: poppins,sans-serif;
+    color: #797878;
+    line-height: 1.4;
+}
+
+.all-testmonials {
+    display: flex;
+    gap: 2rem;
+    width: 90%;
+    justify-content: center;
+    padding: 3rem;
+}

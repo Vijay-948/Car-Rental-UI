@@ -25,7 +25,9 @@ const HomePage = () => {
            <Download />
            <Footer /> */}
 
-           <Contact />
+           <Testimonials />
+
+           
            
 
         </>
