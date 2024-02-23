@@ -7,24 +7,24 @@ import Footer from "../Components/Footer"
 import Home from "../Components/Home"
 import PickCar from "../Components/PickCar"
 import PlanTrip from "../Components/PlanTrip"
+import Testimonials from "../Components/Testimonials"
 import Contact from "./Contact";
 
 const HomePage = () => {
     
     return(
         <>
-           <Home />
+           {/* <Home />
            <BookCar />
            <PlanTrip />
            <PickCar />
            <Banner /> 
            <ChooseUs />
-           
            <Faq /> 
            <Download />
-           <Footer /> 
+           <Footer />  */}
 
-           {/* <Testimonials /> */}
+           <Testimonials />
 
            
            
