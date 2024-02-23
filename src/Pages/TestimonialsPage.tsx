@@ -1,10 +1,10 @@
-import Testmonials from "../Components/Testmonials";
+// import Testimonials from "../Components/Testmonials";
 
 function TestimonialsPage() {
     return(
         <>
         <section className="testmonials-page">
-            <Testmonials />
+            {/* <Testimonials /> */}
 
             <div className="book-banner">
                 <div className="book-banner__overlay">
