@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import data from './TestimonilasData';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import {FaQuoteRight} from 'react-icons/fa';
+import '../Styles/Testimonials.css';
 
 interface Person {
     id: number;
@@ -37,11 +38,15 @@ const Testimonials = () => {
 
     return (
         <>
-          <section>
+          <section className='section'>
             <div className="title">
                 <h2>
                     <span>Testimonials</span>
                 </h2>
+                <p>
+                    Explore our clients' testimonials to uncover the transformative
+                     impact of our service  and the exceptional results they've achieved.
+                </p>
             </div>
 
             <div className="section-center">
@@ -58,7 +63,7 @@ const Testimonials = () => {
                         }
 
                         return(
-                            <article>
+                            <article className={position} key={id}>
                                 <img src={image} alt={name} className='person-img' />
                                 <h4>{name}</h4>
                                 <p className="quote">{quote}</p>
