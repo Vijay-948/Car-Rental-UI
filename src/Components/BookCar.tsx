@@ -11,6 +11,7 @@ import MahindraThar from '../Assests/CarModels/MahindraThar.png';
 import Honda from '../Assests/CarModels/Honda.png';
 import Innova from '../Assests/CarModels/innova.png';
 import ToyotaFortuner from '../Assests/CarModels/Fortuner.png'
+import '../Styles/BookCar.css';
 
 
 
@@ -71,7 +72,7 @@ const BookCar = () => {
     const openModal = (event: React.MouseEvent<HTMLDivElement | HTMLButtonElement>) =>{
         event.preventDefault();
 
-        const errorMsg = document.querySelector(".errorMessage") as HTMLElement;
+        const errorMsg = document.querySelector(".error-message") as HTMLElement;
 
         if(carType === "" || pickUp === "" || dropOff === "" || startDate === "" || endDate === ""){
             errorMsg.style.display = "flex";
@@ -94,23 +95,26 @@ const BookCar = () => {
     const confirmBooking = (event: React.MouseEvent<HTMLButtonElement>) =>{
         event.preventDefault();
         setModal(!modal);
-        const doneMsg = document.querySelector(".booking-done") as HTMLElement | null;
-        if(doneMsg != null){
+        const doneMsg = document.querySelector(".booking-done") as HTMLElement;
+        //doneMsg.style.display="flex";
+        if(doneMsg){
             doneMsg.style.display="flex";
         }
+        //     console.log("element not found");
+        // }
     }
 
-    const handleCar = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleCar = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setCarType(event.target.value);
         setCarImg(event.target.value);
     }
 
-    const handlePick = (event: React.ChangeEvent<HTMLInputElement>) =>{
+    const handlePick = (event: React.ChangeEvent<HTMLSelectElement>) =>{
         setPickUp(event.target.value);
 
     }
 
-    const handleDrop = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleDrop = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setDropOff(event.target.value);
     }
     const handleStartDate = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -148,17 +152,19 @@ const BookCar = () => {
         imgUrl = "";
     }
 
-    // const hideMessage = () => {
-    //     const doneMsg = document.querySelector(".booking-done");
-    //     doneMsg.style.display = "none"
-    // }
+    const hideMessage = () => {
+        const doneMsg = document.querySelector(".booking-done") as HTMLElement;
+        if(doneMsg != null){
+            doneMsg.style.display = "none"
+        }
+        
+    }
 
     return (
         <>
-        <section className="book-section">
+        <section id="booking-section" className="book-section">
             <div onClick={openModal}
-            className="">
-
+                className={`modal-overlay ${modal ? "active-modal" : ""}`}>
             </div>
 
             <div className="container">
@@ -166,13 +172,13 @@ const BookCar = () => {
                     <div className="book-content__box">
                         <h2>Book a Car</h2>
 
-                         <p className="error-message">
+                        <p className="error-message">
                             All fields required! <i className="fa-solid fa-xmark"></i>
                         </p>
 
                         <p className="booking-done">
                             Check your email to confirm an order.{" "}
-                            {/* <i onClick={} className="fa-solid fa-xmark"></i> */}
+                            <i onClick={hideMessage} className="fa-solid fa-xmark"></i>
                         </p>
 
                     <form className="box-form">
@@ -180,7 +186,8 @@ const BookCar = () => {
                             <label>
                                 <i className="fa-solid fa-car"></i> &nbsp;Select Your Car Type <b>*</b>
                             </label>
-                            <select>
+                            <select value={carType} onChange={handleCar}>
+                                <option>Select Your Car Model</option>
                                 <option value="Volvo XC90">Volvo XC90</option>
                                 <option value="VolksWagen Polo GT">VolksWagen Polo GT</option>
                                 <option value="BMW-5">BMW-5</option>
@@ -198,7 +205,8 @@ const BookCar = () => {
                             <label>
                                 Pick-up<b>*</b>
                             </label>
-                            <select name="" id="">
+                            <select value={pickUp} onChange={handlePick}>
+                                <option>Select Pick Up Loaction</option>
                                 <option>Gachbowli, Hyderbad, Telegana</option>
                                 <option>KPHB, Hyderbad, Telegana</option>
                                 <option>Greater Noida, Uttar Pradesh</option>
@@ -211,8 +219,9 @@ const BookCar = () => {
                             <label>
                                 Drop-of<b>*</b>
                             </label>
-                            <select>
-                            <option>Gachbowli, Hyderbad, Telegana</option>
+                            <select value={dropOff} onChange={handleDrop}>
+                                <option>Select Drop Off Location</option>
+                                <option>Gachbowli, Hyderbad, Telegana</option>
                                 <option>KPHB, Hyderbad, Telegana</option>
                                 <option>Greater Noida, Uttar Pradesh</option>
                                 <option>Marathalli, Bengaluru, Karnataka</option>
@@ -250,9 +259,10 @@ const BookCar = () => {
 
 
 
-        <div>
+        <div className={`booking-modal ${modal ? "active-modal" : ""}`}>
             <div className="booking-modal__title">
                 <h2>Complete Reservation Form</h2>
+                <i onClick={openModal} className="fa-solid fa-xmark"></i>
             </div>
 
             <div className="booking-modal__message">
@@ -268,11 +278,11 @@ const BookCar = () => {
             <div className="booking-modal__car-info">
                 <div className="dates-div">
                     <div className="booking-modal__car-info__dates">
-                        <h4>Location & Date</h4>
+                        <h5>Location & Date</h5>
                         <span>
                             <i className="fa-solid fa-location-dot"></i>
                             <div>
-                                <h5>Pick-up Date & Time</h5>
+                                <h6>Pick-up Date & Time</h6>
                                 <p>
                                     {startDate} /{" "}
                                     <input type="time" className="input-time"></input>
@@ -285,7 +295,7 @@ const BookCar = () => {
                         <span>
                             <i className="fa-solid fa-location-dot"></i>
                             <div>
-                                <h5>End Date & Time</h5>
+                                <h6>End Date & Time</h6>
                                 <p>
                                     {endDate} / {" "}
                                     <input type="time" className="input-time"></input>
@@ -298,7 +308,7 @@ const BookCar = () => {
                         <span>
                             <i className="fa-solid fa-calendar-days"></i>
                             <div>
-                                <h5>Pick-Up Location</h5>
+                                <h6>Pick-Up Location</h6>
                                 <p>{pickUp}</p>
                             </div>
                         </span>
@@ -308,7 +318,7 @@ const BookCar = () => {
                         <span>
                             <i className="fa-solid fa-calendar-days"></i>
                             <div>
-                                <h5>Drop-Off Location</h5>
+                                <h6>Drop-Off Location</h6>
                                 <p>{dropOff}</p>
                             </div>
                         </span>
@@ -317,7 +327,7 @@ const BookCar = () => {
 
                 <div className="booking-modal__car-info__model">
                     <h5>
-                        <span>Car -</span>{carType}
+                        <span>Car Model You Slelected -</span>{carType}
                     </h5>
 
                     {imgUrl && <img src={imgUrl} alt="car_img" />}

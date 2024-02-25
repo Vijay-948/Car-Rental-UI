@@ -14,9 +14,9 @@ const HomePage = () => {
     
     return(
         <>
-           {/* <Home />
+           {/* <Home /> */}
            <BookCar />
-           <PlanTrip />
+           {/* <PlanTrip />
            <PickCar />
            <Banner /> 
            <ChooseUs />
@@ -24,7 +24,7 @@ const HomePage = () => {
            <Download />
            <Footer />  */}
 
-           <Testimonials />
+           {/* <Testimonials /> */}
 
            
            
