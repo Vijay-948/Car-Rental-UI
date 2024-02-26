@@ -14,20 +14,18 @@ const HomePage = () => {
     
     return(
         <>
-           {/* <Home /> */}
-           <BookCar />
+           <Home />
+           {/* <BookCar /> */}
            {/* <PlanTrip />
            <PickCar />
            <Banner /> 
            <ChooseUs />
            <Faq /> 
+           <Testimonials />
            <Download />
            <Footer />  */}
 
            {/* <Testimonials /> */}
-
-           
-           
 
         </>
     )
