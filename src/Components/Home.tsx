@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import car from '../Assests/Hero/HeroJaguar.png'
 import bg from '../Assests/Hero/hero-bg.png'
+import bg2 from '../Assests/Hero/home-bg.png'
 import  './Home.css'
 
 
@@ -44,7 +45,6 @@ const Home = () => {
         <>
         <section id="home" className="hero-section">
             <div className="container">
-                <img className="bg-shape" src={bg} alt="bg-img" />
                 <div  className="hero-content">
                     <div className="hero-content__text">
                         <h4>Plan your trip now</h4>
