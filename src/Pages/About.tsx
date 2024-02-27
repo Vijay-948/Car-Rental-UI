@@ -1,10 +1,12 @@
 
-
 import AboutMain from '../Assests/About/about-main.jpg';
 import icon1 from '../Assests/About/vehicles.png';
 import icon2 from '../Assests/About/car-rental.png';
 import icon3 from '../Assests/About/car-repair.png';
 import Footer from '../Components/Footer';
+
+import '../Styles/About.css';
+import PlanTrip from '../Components/PlanTrip';
 
 function About() {
     return (
@@ -42,12 +44,13 @@ function About() {
                                 <img src={icon3} alt='car-icon' className='last-fk' />
                                 <span>
                                     <h4>20</h4>
-                                    <p>Mechanic Shop all Over India</p>
+                                    <p>Mechanic Shop</p>
                                 </span>
                             </div>
                         </div>
                     </div>
                 </div>
+                <PlanTrip />
             </div>
         </section>
         <div className="book-banner">
@@ -57,7 +60,7 @@ function About() {
                     <h2>Book a car by getting in touch with us</h2>
                     <span>
                         <i className='fa-solid fa-phone'></i>
-                        <h3>+91 8435757485</h3>
+                        <h3>+91 1234567891</h3>
                     </span>
                 </div>
             </div>
