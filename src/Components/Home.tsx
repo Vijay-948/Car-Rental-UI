@@ -68,7 +68,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div onClick={scrollToTop} className={'scroll-up ${goUp ? "show-scroll" : ""}'}>
+            <div onClick={scrollToTop} className={`scroll-up ${goUp ? "show-scroll" : ""}`}>
             <i className="fa-solid fa-angle-up"></i>
             </div>
         </section>

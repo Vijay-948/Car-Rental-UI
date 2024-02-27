@@ -8,13 +8,14 @@ import Home from "../Components/Home"
 import PickCar from "../Components/PickCar"
 import PlanTrip from "../Components/PlanTrip"
 import Testimonials from "../Components/Testimonials"
+import About from "./About"
 import Contact from "./Contact";
 
 const HomePage = () => {
     
     return(
         <>
-           <Home />
+           {/* <Home /> */}
            {/* <BookCar /> */}
            {/* <PlanTrip />
            <PickCar />
@@ -26,6 +27,8 @@ const HomePage = () => {
            <Footer />  */}
 
            {/* <Testimonials /> */}
+
+           <About />
 
         </>
     )
