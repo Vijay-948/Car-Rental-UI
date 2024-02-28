@@ -1,0 +1,157 @@
+
+.models-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+    padding: 10rem 0;
+    width: 110rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 1150px) {
+    .models-div {
+        grid-template-columns: 1fr 1fr;
+        width: fit-content;
+    }
+}
+
+.container {
+    max-width: 133rem !important;
+    margin: 0 auto !important;
+    padding: 0 2.5rem !important;
+} 
+
+@media (max-width: 800px){
+    .models-div {
+        grid-template-columns: 1fr;
+        width: fit-content;
+    }
+}
+
+.models-div__box {
+    border: 1px solid #d5d5d5;
+    border-radius: 0.3rem;
+    display: flex;
+    width: 25rem;
+    flex-direction: column;
+}
+
+@media (max-width: 400px){
+    .models-div__box {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
+
+.models-div__box__img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.3rem;
+}
+
+.models-div__box__img img {
+    width: 100%;
+    height: 24rem;
+}
+
+.models-div__box__descr {
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+.models-div__box__descr__name-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.models-div__box__descr__name-price__name  {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.5rem;
+}
+
+.models-div__box__descr__name-price__name p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: poppins,sans-serif;
+}
+
+.models-div__box__descr__name-price__name span {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.models-div__box__descr__name-price__name i {
+    font-size: 1.4rem;
+    color: #ffc933;
+}
+
+.models-div__box__descr__name-price__price {
+    display: flex;
+    flex-direction: column;
+    /* text-align: right; */
+}
+
+.models-div__box__descr__name-price__price h4 {
+    font-size: 1.8rem;
+    font-family: poppins,sans-serif;
+
+}
+
+.models-div__box__descr__name-price__price p {
+    font-size: 1.5rem;
+    font-family: poppins,sans-serif;
+    font-weight: 700;
+}
+
+.models-div__box__descr__name-price__details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 9rem;
+    margin-top: 2.5rem;
+    margin: 2rem auto;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.models-div__box__descr__name-price__details span {
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-family: poppins,sans-serif;
+    color: #777777;
+    text-align: left;
+}
+
+.models-div__box__descr__name-price__details i {
+    color: #000;
+}
+
+.models-div__box__descr__name-price__btn {
+    background-color:#a49fc9;
+    padding: 1.8rem 3rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 10px 15px 0 #8a84b3;
+    transition: all 0.3s;
+    border: 2px solid #a49fc9;
+    font-size: 1.8rem;
+    font-family: poppins,sans-serif;
+    cursor: pointer;
+}
+
+.models-div__box__descr__name-price__btn:hover {
+    box-shadow: 0 10px 15px 0 #483D8B;
+}
+
+.models-div__box__descr__name-price__btn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}

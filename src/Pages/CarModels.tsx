@@ -1,16 +1,17 @@
 
-import CarImg1 from '../Assests/CarModels/Jaguar.jpg'
-import carImg2 from '../Assests/CarModels/MahindraThar.png'
-import carImg3 from '../Assests/CarModels/Bmw5.png';
-import carImg4 from '../Assests/CarModels/Fortuner.png'
+import CarImg1 from '../Assests/CarModels/HeroJaguar.png'
+import carImg2 from '../Assests/CarModels/thar.webp'
+import carImg3 from '../Assests/CarModels/Bmw3.png'
+import carImg4 from '../Assests/CarModels/Fortuner.jpg'
 import carImg5 from '../Assests/CarModels/Hyundai.png'
-import carImg6 from '../Assests/CarModels/Honda.png'
+import carImg6 from '../Assests/CarModels/Skoda-superb.webp'
 import carImg7 from '../Assests/CarModels/Jeep.png'
-import carImg8 from '../Assests/CarModels/volvo.jpg'
+import carImg8 from '../Assests/CarModels/volvo1.png'
 import carImg9 from '../Assests/CarModels/volksWagen1.png'
-import carImg10 from '../Assests/CarModels/innova.png'
+import carImg10 from '../Assests/CarModels/Audi.png'
 
 import { Link } from 'react-router-dom'
+import '../Styles/CarModels.css'
 
 
 function CarModels(){
@@ -59,7 +60,7 @@ function CarModels(){
                     </div>
                 </div>
 
-                <div className="models-div__box">
+              <div className="models-div__box">
               <div className="models-div__box__img">
                 <img src={carImg2} alt="car_img" />
                 <div className="models-div__box__descr">
@@ -445,18 +446,7 @@ function CarModels(){
                 </div>
               </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-            </div>
+          </div>
         </div>
       </section>
     </>

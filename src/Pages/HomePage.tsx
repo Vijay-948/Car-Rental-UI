@@ -9,6 +9,7 @@ import PickCar from "../Components/PickCar"
 import PlanTrip from "../Components/PlanTrip"
 import Testimonials from "../Components/Testimonials"
 import About from "./About"
+import CarModels from "./CarModels"
 import Contact from "./Contact";
 
 const HomePage = () => {
@@ -28,7 +29,9 @@ const HomePage = () => {
 
            {/* <Testimonials /> */}
 
-           <About />
+           {/* <About /> */}
+
+           <CarModels />
 
         </>
     )
