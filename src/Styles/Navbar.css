@@ -1,0 +1,114 @@
+.navbar {
+    max-width: 100rem;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.7rem 2rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: 99999;
+    margin: 0 auto; 
+}
+
+.navbar__img {
+    width: 14.5rem;
+    justify-content: space-around;
+   
+}
+
+img{
+    width: 3.5rem;
+    height: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ h4 {
+    font-size: 1rem;
+    font-family: poppins,sans-serif;
+    color: #483D8B;
+    text-transform: uppercase;
+    margin-top: -0.1rem;
+    left: -1;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__links {
+    display: flex;
+    list-style: none;
+    gap: 2.1rem;
+}
+
+.navbar__links a {
+    font-size: 1rem;
+    font-family: poppins,sans-serif;
+    font-weight: 500;
+    color: #483D8B;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 700ms ease-in-out;
+    &::after {
+        position: absolute;
+        content: "";
+        background: #9f97d3;
+        border-radius: 100px;
+        width: 100%;
+        height: 3px;
+        bottom: -20px;
+        left: 0;
+        opacity: 0;
+        transition: opacity 700ms ease-in-out;
+
+    }
+    &:hover {
+        color: #483D8B;
+        &::after{
+            opacity: 1;
+        }
+    }
+}
+
+
+
+@media(max-width: 1000px){
+    .navbar__links{
+        display: none;
+    }
+}
+
+.navbar__buttons {
+    display: flex;
+    gap: 2.5rem;
+    font-size: 1.3rem;
+    font-family: poppins,sans-serif;
+    font-weight: 500;
+    align-items: center;
+}
+
+@media (max-width: 1000px){
+    .navbar__buttons{
+        display: none;
+    }
+}
+
+.navbar__buttons__register {
+    background-color: #483D8B;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 3px;
+    box-shadow: 0 10px 15px 0 #8a7dda;
+    transition: all 0.3s;
+}
+
+.navbar__buttons__register:hover {
+    box-shadow: 0 10px 15px 0 #483e86;
+    
+}

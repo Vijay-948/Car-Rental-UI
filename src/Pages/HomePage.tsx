@@ -5,6 +5,7 @@ import Download from "../Components/Download"
 import Faq from "../Components/Faq"
 import Footer from "../Components/Footer"
 import Home from "../Components/Home"
+import Navbar from "../Components/Navbar"
 import PickCar from "../Components/PickCar"
 import PlanTrip from "../Components/PlanTrip"
 import Testimonials from "../Components/Testimonials"
@@ -16,23 +17,16 @@ const HomePage = () => {
     
     return(
         <>
-           {/* <Home /> */}
-           {/* <BookCar /> */}
-           {/* <PlanTrip />
+           {/* <Home /> 
+           <BookCar />
+           <PlanTrip />
            <PickCar />
            <Banner /> 
            <ChooseUs />
            <Faq /> 
            <Testimonials />
            <Download />
-           <Footer />  */}
-
-           {/* <Testimonials /> */}
-
-           {/* <About /> */}
-
-           <CarModels />
-
+           <Footer />   */}
         </>
     )
 
