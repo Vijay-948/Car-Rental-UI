@@ -3,6 +3,7 @@ import data from './TestimonilasData';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import {FaQuoteRight} from 'react-icons/fa';
 import '../Styles/Testimonials.css';
+import Footer from './Footer';
 
 interface Person {
     id: number;
@@ -80,6 +81,7 @@ const Testimonials = () => {
                     <FiChevronRight/>
                 </button>
             </div>
+            <Footer />
           </section>
         </>
     )

@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom";
 
 import Logo from "../Assests/Logo/Vehicle Logo.png"
+import '../Styles/Navbar.css';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
     return(
         <>
         <nav>
-            <div>
+            {/* <div>
                 <div>
                     <i className="fa-solid fa-xmark"></i>
                 </div>
@@ -45,15 +46,16 @@ const Navbar = () => {
                         </Link>
                     </li>
                 </ul>
-            </div>
+            </div> */}
 
-            <div>
-                <div>
+            <div className="navbar">
+                <div className="navbar_img">
                     <Link to="/" onClick={() => window.scrollTo(0, 0)}>
-                        <img src={Logo} alt="Vehicle-log" />
+                        <img src={Logo} alt="Vehicle-log" />                    
                     </Link> 
+                    <h4>Car Rental</h4>
                 </div>
-                <ul className="nav__links">
+                <ul className="navbar__links">
                     <li>
                         <Link className="home-link" to="/">
                             Home
@@ -86,12 +88,7 @@ const Navbar = () => {
                         Register
                     </Link>
                 </div>
-
-                
             </div>
-
-
-
         </nav>
         </>
 
