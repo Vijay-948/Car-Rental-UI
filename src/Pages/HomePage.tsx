@@ -17,16 +17,32 @@ const HomePage = () => {
     
     return(
         <>
-           {/* <Home /> 
+
+           <Home /> 
            <BookCar />
            <PlanTrip />
+           <PickCar />
+           {/*<Home />
+           <BookCar />
+           {/* <PlanTrip />
+
            <PickCar />
            <Banner /> 
            <ChooseUs />
            <Faq /> 
            <Testimonials />
            <Download />
-           <Footer />   */}
+
+         
+
+           <Footer />  
+           {/* <Testimonials /> */}
+
+           {/* <About /> */}
+
+           {/* <CarModels /> */}
+
+
         </>
     )
 

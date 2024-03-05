@@ -1,26 +1,25 @@
 .book-section {
   position: relative;
+  width: 100%;
   /* background: linear-gradient(to bottom , gray 20%, white 80%); */
   /* padding: 5rem 5rem; */
 }
 
 .container {
-  padding: 0rem 10rem;
-  padding-top: 4rem;
-  margin: 1rem 9rem;
-  margin-right: 9rem;
-  margin-left: 0;
-} 
+    max-width: 133rem !important;
+    margin: 0 auto !important;
+    padding: 0 2.5rem !important;
+  }
 
 .book-content {
-    /* margin: 0 auto; */
-    margin-bottom: 3rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 .book-content__box {
     background-color: white;
-    width: 100%;
-    padding: 2rem 4.5rem 3rem 4rem;
+    width: 90%;
+    padding: 4rem 4.5rem 3rem 4rem;
     box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
     height: auto;
     position: relative;
