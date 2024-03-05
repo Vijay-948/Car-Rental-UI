@@ -1,16 +1,16 @@
 import { eventNames } from "process";
 import { SetStateAction, useEffect, useState } from "react";
 import React, {MouseEvent} from 'react';
-import Volvo from '../Assests/CarModels/volvo.jpg';
-import BMW from '../Assests/CarModels/Bmw5.png';
+import Volvo from '../Assests/CarModels/volvo1.png';
+import BMW from '../Assests/CarModels/Bmw3.png';
 import VolksWagen from '../Assests/CarModels/volksWagen1.png';
-import Jaguar from '../Assests/CarModels/Jaguar.jpg';
+import Jaguar from '../Assests/CarModels/HeroJaguar.png';
 import Hyundai from '../Assests/CarModels/Hyundai.png';
 import Jeep from '../Assests/CarModels/Jeep.png';
-import MahindraThar from '../Assests/CarModels/MahindraThar.png';
-import Honda from '../Assests/CarModels/Honda.png';
-import Innova from '../Assests/CarModels/innova.png';
-import ToyotaFortuner from '../Assests/CarModels/Fortuner.png'
+import MahindraThar from '../Assests/CarModels/thar.webp';
+import Honda from '../Assests/CarModels/Audi.png';
+import Innova from '../Assests/CarModels/Skoda-superb.webp';
+import ToyotaFortuner from '../Assests/CarModels/Fortuner.jpg'
 import '../Styles/BookCar.css';
 
 

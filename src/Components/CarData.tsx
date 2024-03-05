@@ -1,13 +1,13 @@
-import Img1 from '../Assests/CarModels/volvo.jpg';
+import Img1 from '../Assests/CarModels/volvo1.png';
 import Img2 from '../Assests/CarModels/volksWagen1.png';
-import Img3 from '../Assests/CarModels/Jaguar.jpg'
-import Img4 from '../Assests/CarModels/Bmw5.png';
-import Img5 from '../Assests/CarModels/Fortuner.png';
-import Img6 from '../Assests/CarModels/MahindraThar.png';
+import Img3 from '../Assests/CarModels/HeroJaguar.png'
+import Img4 from '../Assests/CarModels/Bmw3.png';
+import Img5 from '../Assests/CarModels/Fortuner.jpg';
+import Img6 from '../Assests/CarModels/thar.webp';
 import Img7 from '../Assests/CarModels/Hyundai.png';
 import Img8 from '../Assests/CarModels/Jeep.png';
-import Img9 from '../Assests/CarModels/Honda.png';
-import Img10 from '../Assests/CarModels/innova.png';
+import Img9 from '../Assests/CarModels/Audi.png';
+import Img10 from '../Assests/CarModels/Skoda-superb.webp';
 
 
 
