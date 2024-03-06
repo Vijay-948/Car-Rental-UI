@@ -22,25 +22,12 @@ const HomePage = () => {
            <BookCar />
            <PlanTrip />
            <PickCar />
-           {/*<Home />
-           <BookCar />
-           {/* <PlanTrip />
-
-           <PickCar />
            <Banner /> 
            <ChooseUs />
            <Faq /> 
            <Testimonials />
            <Download />
-
-         
-
            <Footer />  
-           {/* <Testimonials /> */}
-
-           {/* <About /> */}
-
-           {/* <CarModels /> */}
 
 
         </>

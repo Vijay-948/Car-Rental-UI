@@ -81,7 +81,6 @@ const Testimonials = () => {
                     <FiChevronRight/>
                 </button>
             </div>
-            <Footer />
           </section>
         </>
     )
