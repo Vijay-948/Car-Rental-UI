@@ -9,9 +9,9 @@ import Navbar from "../Components/Navbar"
 import PickCar from "../Components/PickCar"
 import PlanTrip from "../Components/PlanTrip"
 import Testimonials from "../Components/Testimonials"
-import About from "./About"
-import CarModels from "./CarModels"
-import Contact from "./Contact";
+// import About from "./About"
+// import CarModels from "./CarModels"
+// import Contact from "./Contact";
 
 const HomePage = () => {
     
@@ -22,25 +22,12 @@ const HomePage = () => {
            <BookCar />
            <PlanTrip />
            <PickCar />
-           {/*<Home />
-           <BookCar />
-           {/* <PlanTrip />
-
-           <PickCar />
            <Banner /> 
            <ChooseUs />
            <Faq /> 
            <Testimonials />
            <Download />
-
-         
-
            <Footer />  
-           {/* <Testimonials /> */}
-
-           {/* <About /> */}
-
-           {/* <CarModels /> */}
 
 
         </>
